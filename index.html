@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="Styles/form.css">
+    <title>test-form</title>
+
+</head>
+<body>
+    <form action=""></form>
+
+        <h1>Pre-order your spring bulbs!</h1>
+
+        <label for="name" class="label-field">Enter your name</label>
+        <input type="name" placeholder="Enter Your Name" class="input-field">
+
+        <label for="email" class="label-field">Enter your email</label>
+        <input type="email" placeholder="Enter your Email" class="input-field" required>
+
+        <label for="password" class="label-field">Enter your password</label>
+        <input type="Password" placeholder="Enter your password" required>
+
+        <div>
+            <label for="bulbs" class="label-field">Bulbs:</label>
+            <input type="text" list="bulbs" id="subject" placeholder="What bulbs would you like to order?">
+            <datalist id="bulbs">
+                <option value="Peony"></option>
+                <option value="Dahlia" selected></option>
+                <option value="Caladium"></option>
+                <option value="Freesia"></option>
+                <option value="Tulips"></option>
+                <option value="Other"></option>
+            </datalist>
+
+        </div>
+        
+        <label for="message" class="textarea">Your Message</label>
+        <textarea name="message" id="" cols="30" rows="10"></textarea>
+
+        <div class="checkbox-container">
+            <input type="checkbox" checked>Recieve Newsletter! 
+        </div>
+
+        <button type="submit" class="button" disabled>Submit</button>
+
+</body>
+</html>
