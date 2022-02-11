@@ -11,6 +11,7 @@ main{
     height: 300vh;
     display: flex;
     justify-content: center;
+    position:relative
 }
 
 h1{
@@ -23,11 +24,11 @@ h2{
 
 .form{
     box-sizing: border-box;
-    max-width: 800px;
+    max-width: 700px;
     width: 100%;
     min-height: 800px;
-    padding: 25px;
-    margin: 25px;
+    padding: 10px;
+    margin: 30px;
     border-radius: 15px;
     background-color: antiquewhite;
     display: flex;
@@ -39,26 +40,39 @@ h2{
 .input-field{
     box-sizing: border-box;
     width: 100%;
-    min-height: 40px;
+    min-height: 35px;
+    font-size: 15px;
     border: solid 2px rosybrown;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
     border-radius: 15px;
 }
 
-input[type=textbox]
 
-.label-field{
-    display: block;
-    background-color: plum;
+.label-field {
+    display:block;
     font-size: 20px;
+    margin: 5px;
+    align-self: flex-start;
+}
+
+.select{
+    height: 40px;
+    font-size: 20px;
+    border-radius: 15px;
+    width:100%;
+    margin-bottom: 30px;
+}
+
+.textarea{
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 .input-field:hover{
-    border: solid blueviolet 1px;
+    border: solid rosybrown 1px;
 }
 
 .button{
-    background-color: rgb(160, 80, 235);
+    background-color:palevioletred;
     width: 100px;
     height: 50px;
     font-size: 20px;
@@ -74,4 +88,9 @@ button:hover{
 
 .checkbox:hover{
 cursor: pointer;
+}
+
+.credits{
+    position: absolute;
+    bottom: 10px;
 }

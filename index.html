@@ -20,30 +20,29 @@
         <h2>Don't miss out, pre-order your spring happiness now!</h2>
         <h3>Fill out the form below</h3>
 
-        <label for="name" class="label-field">Enter your name</label>
-        <input type="name" placeholder="Full Name" class="input-field" id= "name" autofocus>
+        <label for="name" class="label-field">Enter your name:</label>
+            <input type="name" placeholder="Full Name" class="input-field" id= "name" autofocus>
 
-        <label for="email" class="label-field">Enter your email</label>
-        <input type="email" placeholder="Email" class="input-field" id="email" required>
+        <label for="email" class="label-field">Enter your email:</label>
+            <input type="email" placeholder="Email" class="input-field" id="email" required>
 
-        <label for="password" class="label-field">Enter your password</label>
-        <input type="Password" placeholder="Password" class = "input-field" id="password" required minlength="8">
+        <label for="password" class="label-field">Enter your password:</label>
+            <input type="Password" placeholder="Password" class = "input-field" id="password" required minlength="8">
 
         <div>
             <label for="bulbs" class="label-field">What type of bulbs would you like to order?</label>
-            <input type="text" list="bulbs" placeholder="What Bulbs?">
-            <datalist id="bulbs">
-                <option value="Peony"></option>
-                <option value="Dahlia" selected></option>
-                <option value="Caladium"></option>
-                <option value="Freesia"></option>
-                <option value="Tulips"></option>
-                <option value="Other"></option>
-            </datalist>
+            <select class="select" id="bulbs" >
+                <option value="peony">Peony</option>
+                <option value="dahlia">Dahlia</option>
+                <option value="caladium">Caladium</option> 
+                <option value="freesia">Freesia</option> 
+                <option value="tulips">Tulips</option> 
+                <option value="other">Other</option>
+            </select>
         </div>
         
-        <label for="message" class="label-field">Your Message</label>
-        <textarea name="message" id="message" cols="30" rows="10" class="input-field"></textarea>
+        <label for="message" class="label-field">Your Message:</label>
+            <textarea name="message" id="message" cols="30" rows="8" class="input-field textarea" placeholder="Enter your message"></textarea>
 
         <div class="checkbox-container">
             <label for="checkbox">Newsletter?</label>
@@ -54,7 +53,7 @@
 
     </form>
 
-    <p>Photo by <a href="https://unsplash.com/@ohtilly?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">OhTilly</a> on <a href="https://unsplash.com/collections/sozC-mIxHRw/plants/15922e87c5f270a17ac038fdd4c21144?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a></p>
+    <p class="credits">Photo by <a href="https://unsplash.com/@ohtilly?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">OhTilly</a> on <a href="https://unsplash.com/collections/sozC-mIxHRw/plants/15922e87c5f270a17ac038fdd4c21144?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a></p>
 </main>
 </body>
 </html>
