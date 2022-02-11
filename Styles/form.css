@@ -15,12 +15,24 @@ form{
 
 }
 
+.input-field{
+    box-sizing: border-box;
+    width: 100%;
+    min-height: 40px;
+    border: solid 2px coral;
+}
+
 .label-field{
-background-color: antiquewhite;
+    display: block;
+    background-color: antiquewhite;
+}
+
+.input-field:hover{
+    border: solid blueviolet 1px;
 }
 
 .button{
-    background-color: rosybrown;
+    background-color: peachpuff;
     width: 100px;
     height: 50px;
     font-size: 20px;
@@ -28,7 +40,7 @@ background-color: antiquewhite;
 }
 
 button:hover{
-    background-color: peachpuff;
+    background-color: rosybrown;
     font-style: bold;
 
 }

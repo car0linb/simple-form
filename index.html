@@ -12,22 +12,25 @@
 
 </head>
 <body>
-    <form action=""></form>
+    <form class= "form" action=""></form>
 
         <h1>Pre-order your spring bulbs!</h1>
 
+        <h2>Don't miss out, pre-order your spring happiness now!</h2>
+        <h3>Fill out the form below</h3>
+
         <label for="name" class="label-field">Enter your name</label>
-        <input type="name" placeholder="Enter Your Name" class="input-field">
+        <input type="name" placeholder="Enter Your Name" class="input-field" autofocus>
 
         <label for="email" class="label-field">Enter your email</label>
         <input type="email" placeholder="Enter your Email" class="input-field" required>
 
         <label for="password" class="label-field">Enter your password</label>
-        <input type="Password" placeholder="Enter your password" required>
+        <input type="Password" placeholder="Enter your password" required minlength="8">
 
         <div>
-            <label for="bulbs" class="label-field">Bulbs:</label>
-            <input type="text" list="bulbs" id="subject" placeholder="What bulbs would you like to order?">
+            <label for="bulbs" class="label-field">What type of bulbs would you like to order?</label>
+            <input type="text" list="bulbs" id="subject" placeholder="What Bulbs?">
             <datalist id="bulbs">
                 <option value="Peony"></option>
                 <option value="Dahlia" selected></option>
