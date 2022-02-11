@@ -12,7 +12,8 @@
 
 </head>
 <body>
-    <form class= "form" action=""></form>
+    <main>
+    <form class= "form" action="">
 
         <h1>Pre-order your spring bulbs!</h1>
 
@@ -20,17 +21,17 @@
         <h3>Fill out the form below</h3>
 
         <label for="name" class="label-field">Enter your name</label>
-        <input type="name" placeholder="Enter Your Name" class="input-field" autofocus>
+        <input type="name" placeholder="Full Name" class="input-field" id= "name" autofocus>
 
         <label for="email" class="label-field">Enter your email</label>
-        <input type="email" placeholder="Enter your Email" class="input-field" required>
+        <input type="email" placeholder="Email" class="input-field" id="email" required>
 
         <label for="password" class="label-field">Enter your password</label>
-        <input type="Password" placeholder="Enter your password" required minlength="8">
+        <input type="Password" placeholder="Password" class = "input-field" id="password" required minlength="8">
 
         <div>
             <label for="bulbs" class="label-field">What type of bulbs would you like to order?</label>
-            <input type="text" list="bulbs" id="subject" placeholder="What Bulbs?">
+            <input type="text" list="bulbs" placeholder="What Bulbs?">
             <datalist id="bulbs">
                 <option value="Peony"></option>
                 <option value="Dahlia" selected></option>
@@ -39,17 +40,21 @@
                 <option value="Tulips"></option>
                 <option value="Other"></option>
             </datalist>
-
         </div>
         
-        <label for="message" class="textarea">Your Message</label>
-        <textarea name="message" id="" cols="30" rows="10"></textarea>
+        <label for="message" class="label-field">Your Message</label>
+        <textarea name="message" id="message" cols="30" rows="10" class="input-field"></textarea>
 
         <div class="checkbox-container">
-            <input type="checkbox" checked>Recieve Newsletter! 
+            <label for="checkbox">Newsletter?</label>
+            <input type="checkbox" id="checkbox" class="checkbox" checked>Yes! 
         </div>
 
         <button type="submit" class="button" disabled>Submit</button>
 
+    </form>
+
+    <p>Photo by <a href="https://unsplash.com/@ohtilly?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">OhTilly</a> on <a href="https://unsplash.com/collections/sozC-mIxHRw/plants/15922e87c5f270a17ac038fdd4c21144?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a></p>
+</main>
 </body>
 </html>
